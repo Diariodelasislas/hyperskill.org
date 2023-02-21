@@ -6,11 +6,10 @@ public class SimpleBot {
     final static Scanner scanner = new Scanner(System.in); // Do not change this line
 
     public static void main(String[] args) {
-        greet("Diariodelasislas", "2023"); // change it as you need
+        greet("Aid", "2018"); // change it as you need
         remindName();
         guessAge();
         count();
-        // ...
         test();
         end();
     }
@@ -51,20 +50,12 @@ public class SimpleBot {
         System.out.println("1. To repeat a statement multiple times.");
         System.out.println("2. To decompose a program into several small subroutines.");
         System.out.println("3. To determine the execution time of a program.");
-        System.out.println("4. To interrupt the execution of a program");
-        int option = 0;
-        while (option != 2) {
-            option = scanner.nextInt();
-            if (option != 2 && option >= 1 && option <= 4) {
-                System.out.println("Please, try again.");
-            } else if (option == 2) {
-                System.out.println("");
-            } else {
-                System.out.println("error");
-            }
+        System.out.println("4. To interrupt the execution of a program.");
+        var result = 0;
+        while (result != 2) {
+            System.out.println("Please, try again.");
+            result = scanner.nextInt();
         }
-        
-
     }
 
     static void end() {
