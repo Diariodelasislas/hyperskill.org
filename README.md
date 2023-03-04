@@ -1,2 +1,1 @@
-#hyperskill.org
-# hyperskill.org
+#1
